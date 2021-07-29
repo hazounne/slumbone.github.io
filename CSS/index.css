@@ -1,10 +1,13 @@
 * {
+
+}
+
+body {
+  width: 1920px;
+  height: 3240px;
+  position: absolute;
   background-color: #fdefef;
   background-image:url('https://github.com/slumbone/slumbone.github.io/blob/main/images/index/index-background.png?raw=true');
   background-repeat:no-repeat;
   background-position: center;
-}
-
-body {
-
 }
