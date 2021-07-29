@@ -27,7 +27,10 @@ body {
   width: 928px;
   height: 304px;
   margin: 0;
-  background-color: black;
+  background: linear-gradient(120deg, #daa29d, rgba(255,0,0,0) 60%),
+              linear-gradient(35deg,#c0bacf, rgba(0,255,0,0) 80%),
+              linear-gradient(230deg, #e1c0be, rgba(0,0,255,0) 60%),
+              linear-gradient(336deg, #e7c7d9, rgba(0,0,255,0) 80%);
   left: 50%;
   transform: translate(-464px);
   top: 16px;
