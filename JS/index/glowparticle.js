@@ -11,6 +11,7 @@ export class GlowParticle {
     this.vy = Math.random() * 4;
 
     this.sinValue = Math.random();
+  }
 
   animate(ctx, stageWidth, stageHeight) {
       this.sinValue ++ 0.01;
@@ -50,6 +51,5 @@ export class GlowParticle {
     ctx.fillStyle = g;
     ctx.arc(this.x, this.y, this.radius, 0, PI2, false);
     ctx.fill();
-    }
   }
 }
