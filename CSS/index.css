@@ -4,12 +4,12 @@
 
 body {
   width: 1920px;
-  height: 3240px;
-  position: absolute;
+  height: 1620px;
+  position:absolute; 
   background-color: #fdefef;
   background-image:url('https://github.com/slumbone/slumbone.github.io/blob/main/images/index/index-background.png?raw=true');
-  background-size: 50%;
+  background-size: 960px 1620px;
   background-repeat:no-repeat;
-  background-position: 0px center;
-  background-origin: border-box;
+  background-origin:border-box;
+  background-position: 50% top, center;
 }
