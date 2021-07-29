@@ -1,7 +1,3 @@
-* {
-
-}
-
 body {
   width: 100%;
   height: 1620px;
@@ -35,4 +31,11 @@ body {
   transform: translate(-464px);
   top: 16px;
 
+}
+
+#os {
+  position:absolute;
+  left: 156px;
+  top: 201px;
+  width: 105px;
 }
