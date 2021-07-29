@@ -1,7 +1,7 @@
 background-color: #fdefef
 
 body {
-  background-image:url(https://github.com/slumbone/slumbone.github.io/blob/main/images/index/index-background.png?raw=true);
+  background-image:url('https://github.com/slumbone/slumbone.github.io/blob/main/images/index/index-background.png?raw=true');
   background-repeat:no-repeat;
   background-position: center;
 }
