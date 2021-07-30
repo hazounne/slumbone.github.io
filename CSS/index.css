@@ -4,17 +4,16 @@ body {
   padding: 0;
   border: 0;
   margin: 0;
-  position:absolute; 
+  position: absolute;
   background-color: #fdefef;
-  background-image:url('https://github.com/slumbone/slumbone.github.io/blob/main/images/index/index-background.png?raw=true');
+  background-image: url("https://github.com/slumbone/slumbone.github.io/blob/main/images/index/index-background.png?raw=true");
   background-size: 960px 1620px;
-  background-repeat:no-repeat;
-  background-origin:border-box;
-  background-position: 50% top, center;
-}
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position: 50% top, center; }
 
 .A {
-  position:absolute;
+  position: absolute;
   padding: 0;
   border: 0;
   margin: 0;
@@ -23,19 +22,22 @@ body {
   width: 928px;
   height: 304px;
   margin: 0;
-  background: linear-gradient(120deg, #daa29d, rgba(255,0,0,0) 60%),
-              linear-gradient(35deg,#c0bacf, rgba(0,255,0,0) 80%),
-              linear-gradient(230deg, #e1c0be, rgba(0,0,255,0) 60%),
-              linear-gradient(336deg, #e7c7d9, rgba(0,0,255,0) 80%);
+  background: linear-gradient(120deg, #daa29d, rgba(255, 0, 0, 0) 60%), linear-gradient(35deg, #c0bacf, rgba(0, 255, 0, 0) 80%), linear-gradient(230deg, #e1c0be, rgba(0, 0, 255, 0) 60%), linear-gradient(336deg, #e7c7d9, rgba(0, 0, 255, 0) 80%);
   left: 50%;
   transform: translate(-464px);
-  top: 16px;
-
-}
+  top: 16px; }
 
 #os {
-  position:absolute;
+  position: absolute;
   left: 156px;
   top: 201px;
-  width: 105px;
-}
+  width: 105px; }
+
+.ball {
+  border-radius: 80%;
+  height: 100px;
+  width: 100px;
+  transform: translateX(calc(var(--mouse-x) * 0.2px)) translateY(calc(var(--mouse-y) * 0.2px));
+  background: goldenrod; }
+
+/*# sourceMappingURL=index.css.map */
