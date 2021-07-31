@@ -41,12 +41,12 @@ body {
 }
 
 .ball {
-  $size: 100px;
-  border-radius: 80%;
-  height: $size;
-  width: $size;
+  border-radius: 50%;
+  height: 63px;
+  width: 367px;
   transform:
-    translateX(calc(var(--mouse-x) * 0.2px))
-    translateY(calc(var(--mouse-y) * 0.2px));
-  background: goldenrod;
+  translateX(calc(var(--mouse-x) * 0.01px + 556px))
+  translateY(calc(var(--mouse-y) * 0.01px + 149px));
+  background: linear-gradient(0.25turn, #c6c1cf 2.1415%, #6d99cc 38.1572%, #065ee7 82.5844%, #0034e9 99.6276%);
+  filter: blur(calc(var(--mouse-x) * 0.01px));
 }
