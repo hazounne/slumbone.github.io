@@ -40,6 +40,13 @@ body {
   width: 105px;
 }
 
+#logo {
+  position:absolute;
+  left: 24px;
+  top: 15px;
+  width: 32px;
+}
+
 .ball {
   position:absolute;
   border-radius: 50%;
@@ -56,11 +63,10 @@ body {
   transform:
   translateX(calc(var(--mouse-x) * 0.01px + 556px))
   translateY(calc(var(--mouse-y) * 0.01px + 149px));
-  filter: blur(calc((var(--mouse-y)) * 0.01px));
 }
 #ball2 {
   position:absolute;
-  background: linear-gradient(0.25turn, #c6c1cf 2.1415%, #00167f 38.1752%, #ffb100 99.6276%);
+  background: #e2b0d6;
   transform:
   translateX(calc(var(--mouse-x) * 0.005px + 471px))
   translateY(calc(var(--mouse-y) * 0.005px + 96px));
@@ -72,5 +78,5 @@ body {
   transform:
   translateX(calc(var(--mouse-x) * 0.01px + 104px))
   translateY(calc(var(--mouse-y) * 0.01px + 33px));
-  filter: blur(calc((var(--mouse-y)) * 0.01px));
+  filter: blur(calc((var(--mouse-y)) * 0.005px));
 }
