@@ -64,9 +64,6 @@ body {
 
 .Bs {
   position: absolute;
-  padding: 0;
-  border: 0;
-  margin: 0;
   box-sizing: border-box;
   border-radius: 24px;
   width: 208px;
@@ -78,8 +75,9 @@ body {
     background: linear-gradient(0.75turn, rgba(253, 239, 239, 0) 20%, #ab89e2 40.9125%, #6d6be7 85.1957%, #6b4db7 100%);
     z-index: 0; }
   #B_1 {
+    position: absolute;
     text-align: right;
-    transform: translateX(1px) translateY(1px);
+    transform: translateX(0px) translateY(0px);
     z-index: 1; }
   #B2 {
     left: 50%;
