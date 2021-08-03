@@ -34,11 +34,25 @@ body {
   width: 105px; }
 
 .ball {
+  position: absolute;
   border-radius: 50%;
   height: 63px;
-  width: 367px;
-  transform: translateX(calc(var(--mouse-x) * 0.01px + 556px)) translateY(calc(var(--mouse-y) * 0.01px + 149px));
+  width: 367px; }
+
+#ball3 {
+  position: absolute;
   background: linear-gradient(0.25turn, #c6c1cf 2.1415%, #6d99cc 38.1572%, #065ee7 82.5844%, #0034e9 99.6276%);
-  filter: blur(calc(var(--mouse-x) * 0.01px)); }
+  transform: translateX(calc(var(--mouse-x) * 0.02px + 506px)) translateY(calc(var(--mouse-y) * 0.01px + 149px)); }
+
+#ball2 {
+  position: absolute;
+  background: linear-gradient(0.25turn, #c6c1cf 2.1415%, #00167f 38.1752%, #ffb100 99.6276%);
+  transform: translateX(calc(var(--mouse-x) * 0.005px + 471px)) translateY(calc(var(--mouse-y) * 0.005px + 116px));
+  filter: blur(calc((var(--mouse-y)) * 0.003px + 2px)); }
+
+#ball1 {
+  position: absolute;
+  background: #e8c8d4;
+  transform: translateX(calc(var(--mouse-x) * 0.021px + 54px)) translateY(calc(var(--mouse-y) * 0.01px + 33px)); }
 
 /*# sourceMappingURL=index.css.map */
