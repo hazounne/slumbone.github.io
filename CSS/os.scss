@@ -24,8 +24,13 @@
     font-style: normal;
 }
 @font-face {
+    font-family: 'NotoSansLight';
+    src: url('./fonts/NotoSansKR-Light.otf') format('opentype');
+    font-style: normal;
+}
+@font-face {
     font-family: 'NotoSemiBold';
-    src: url('./fonts/STIXTwoText-SemiBold.otf') format('truetype');
+    src: url('./fonts/STIXTwoText-Medium.ttf') format('truetype');
     unicode-range: U+0030-007A;
     font-style: normal;
 }
@@ -33,60 +38,93 @@
 $color-white: #FFF;
 $color-bg: #Eaf0f5;
 $color-shadow: #ccd8eb;
-
+$color-demi: #607ca9;
 $color-dark: #2f4874;
+$r: 16px;
+
+#banner{
+    z-index: 1;
+    -webkit-transform: translateZ(0);
+    border: none;
+    width: 2*$r;
+    position: fixed;
+    top: 2*$r;
+    left: 2*$r;
+    line-height: 100px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    color: $color-shadow;
+    filter: drop-shadow(-2px -2px px $color-white);
+}
+
+*{
+    box-sizing: border-box;
+    margin:0 auto;
+}
 
 body {
+    overflow-x : hidden;
+    overflow-y : scroll;
     width: 100%;
-    //height: 1620px;
-    max-width: 1080px;
-    min-width: 480px;
+    max-width: 75*$r;
+    min-width: 30*$r;
     padding: 0;
     border: 0;
-    margin: 0;
-    align-content: center;
+    margin: 3*$r auto;
+    padding: 0 6*$r;
     background-color: $color-bg;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    
 
         header{
+            box-sizing:border-box;
             position: relative;
-            top: 96px;
-            left: 0.5em;
-            height: 36px;
-            
-            font-family: 'GmarketSansMedium';
-            font-size: 36px;
-            font-weight: 100;
+            margin: 12*$r 0;
+            font-family: 'GmarketSansLight';
+            font-weight: bold;
+            font-size: 2.75*$r;
+            letter-spacing: 0.1*$r;
+            word-spacing: 0.5*$r;
             text-align: center;
-            color: $color-dark;
-            text-shadow: 1px 1px 1px $color-white;
+            color: $color-demi;
+
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+                color: $color-shadow;
+                text-shadow: 1px 1px 1px $color-white;
+
+            }
+
+            text-shadow: 1px 1px 0px $color-white;
         }
 
 
         article{
         box-sizing: border-box;
-        margin: 36px;
         position: relative;
-        top: 128px;
         color: $color-dark;
         text-align: left;
     
             h1{
-                height: 64px; top: 50%;
-                border-radius: 32px;
-                margin-top: 128px; margin-bottom: 36px;
-                line-height: 64px;
-                text-indent: 32px;
+                max-width: 80*$r;
+                height: 4*$r; top: 50%;
+                border-radius: 2*$r;
+                margin-top: 8*$r; margin-bottom: 2*$r;
+                line-height: 4*$r;
+                text-indent: 2*$r;
                 transform: translateY(-50%);
 
-                font-size: 24px; font-weight: 100;
-                font-family: 'GmarketSansLight';
-                color: $color-dark; text-shadow: 1px 1px 1px $color-white;
+                letter-spacing: 0.03*$r;
+                word-spacing: 0.2*$r;
 
-                box-shadow: -3px -3px 8px $color-white,  3px 3px 8px $color-shadow;
-                transition: all 0.15s ease-in-out;
+                font-size: 1.5*$r; font-weight: 100;
+                font-family: 'NotoSansLight';
+                font-weight: normal;
+                color: $color-demi; text-shadow: 1px 1px 1px $color-white;
+
+                box-shadow: -3px -3px 16px $color-white,  3px 3px 16px $color-shadow;
+                transition: all 0.5s ease-in-out;
                 cursor: pointer;
                 font-weight: 600;
                 
@@ -107,23 +145,22 @@ body {
                     font-family: 'NotoSansRegular';
                     font-weight:normal;
                     right: 4px;
-                    transform: translateX(-32px);
-                    font-size: 16px;
+                    transform: translateX(-2*$r);
+                    font-size: $r;
                     text-align: right;
-                    height: 16px;
-                    margin-bottom: 36px;
+                    height: $r;
+                    margin-bottom: 2*$r;
                 }
             }
 
-
-
             h3{
                 font-family: 'NotoSansRegular';
-                font-size: 24px;
+                color: $color-demi;
+                font-size: 1.25*$r;
                 font-weight: 100;
-                margin-top: 24px;
-                margin-bottom: 24px;
-
+                margin-top: 1.5*$r;
+                margin-bottom: 1.5*$r;
+                padding-left: $r;
                 p-p{
                     opacity: 0.5;
                     position: absolute;
@@ -139,21 +176,38 @@ body {
             }
 
             p{
-                text-indent: 48px;
+                padding: 0 2*$r;
+                text-indent: 3*$r;
                 font-family: 'NotoSemiBold';
-                font-size: 16px;
+                font-size: $r;
                 line-height: 2;
-                
+                letter-spacing: 0.03*$r;
                 b{
+                    box-shadow: -2px -2px 32px $color-white,  2px 2px 32px $color-shadow;
                     font-family: 'NotoSansRegular'; 
                 }
 
             }
 
             .m{
+                text-indent: 0;
+                color: $color-demi;
                 font-family: 'NotoSansRegular';
                 text-align: center;
                 line-height: 2;
+                padding: 2*$r 4*$r;
+                margin: 2*$r 2*$r;
+                box-shadow: inset 1px 1px 2px $color-shadow, inset -1px -1px 2px $color-white;
+                border-radius: $r;
+                transition: all 0.5s ease-out;
+                &:hover {
+                    border-radius: 0.25*$r;
+                    box-shadow: inset 4px 4px 16px $color-shadow, inset -4px -4px 16px $color-white;
+                    font-size: 16px;
+                    text-shadow:-2px -2px 2px $color-white,  2px 2px 2px $color-shadow;
+                }
+
+            
             }
 
             .quoter{
@@ -161,12 +215,13 @@ body {
                 color: $color-shadow;
                 text-shadow: 1px 1px 1px $color-white;
                 text-align: right;
-                margin-right: 36px;
+                margin: 0 $r $r 0;
+                transform: translateY(-$r);
             }
 
             ol{
-                margin-top: 36px;
-                margin-bottom: 36px;
+                margin-top: 3*$r;
+                margin-bottom: 3*$r;
             }
 
             img{
@@ -174,7 +229,38 @@ body {
                 border-radius: 16px;
                 display: block;
                 margin: 64px auto;
-                box-shadow: -2px -2px 8px $color-white,  2px 2px 8px $color-shadow;
+                box-shadow: -2px -2px 2px $color-white,  2px 2px 2px $color-shadow;
+                transition: all 0.5s ease-out;
+                &:hover {
+                    border-radius: 0.25*$r;
+                    box-shadow: 0 0 0 rgba(0,0,0,0), 0 0 0 rgba(0,0,0,0);
+                }
+            }
+
+            a{
+                text-indent: 0;
+                font-family: 'NotoSansRegular';
+                color: $color-demi;
+                text-shadow: 1px 1px 1px $color-white;
+                border-radius: $r;
+                margin: 0.25*$r, 0;
+                transition: all 0.5s ease-out;
+                display: inline-block;
+                box-shadow: -2px -2px 16px rgba(0,0,0,0),  2px 2px 16px rgba(0,0,0,0);
+                &:hover {
+                    box-shadow: -1px -1px 2px $color-white,  1px 1px 2px $color-shadow;
+                    color: $color-shadow;
+                    font-size: 16px;
+                    
+                    padding: 0 4px;
+                    margin: 0 4px;
+                }
+
+                &:active {
+                    box-shadow: inset 1px 1px 2px $color-shadow, inset -1px -1px 2px $color-white;
+                    color: $color-demi;
+                  }
+  
             }
         }
 
