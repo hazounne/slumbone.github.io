@@ -30,10 +30,11 @@
     font-style: normal;
 }
 
-$color-bg: #EBECF0;
-$color-shadow: #BABECC;
 $color-white: #FFF;
-$color-dark: #61677C;
+$color-bg: #Eaf0f5;
+$color-shadow: #ccd8eb;
+
+$color-dark: #2f4874;
 
 body {
     width: 100%;
@@ -69,12 +70,12 @@ body {
         margin: 36px;
         position: relative;
         top: 128px;
-        color: #323333;
+        color: $color-dark;
         text-align: left;
     
             h1{
                 height: 64px; top: 50%;
-                border-radius: 16px;
+                border-radius: 32px;
                 margin-top: 128px; margin-bottom: 36px;
                 line-height: 64px;
                 text-indent: 32px;
@@ -84,13 +85,13 @@ body {
                 font-family: 'GmarketSansLight';
                 color: $color-dark; text-shadow: 1px 1px 1px $color-white;
 
-                box-shadow: -3px -3px 50px $color-white,  3px 3px 50px $color-shadow;
-                transition: all 0.1s ease-in-out;
+                box-shadow: -3px -3px 8px $color-white,  3px 3px 8px $color-shadow;
+                transition: all 0.15s ease-in-out;
                 cursor: pointer;
                 font-weight: 600;
                 
                 &:hover {
-                    box-shadow: -3px -3px 20px $color-white,  3px 3px 20px $color-shadow;
+                    box-shadow: -1px -1px 1px $color-white,  1px 1px 1px $color-shadow;
 
                 }
                 
@@ -99,12 +100,14 @@ body {
                 }
 
                 p-p{
-                    opacity: 0.5;
+                    color: $color-shadow;
+                    text-shadow: 1px 1px 1px $color-white;
                     position: absolute;
                     align-content: right;
                     font-family: 'NotoSansRegular';
+                    font-weight:normal;
                     right: 4px;
-                    transform: translateX(-16px);
+                    transform: translateX(-32px);
                     font-size: 16px;
                     text-align: right;
                     height: 16px;

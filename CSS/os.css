@@ -30,7 +30,7 @@ body {
   border: 0;
   margin: 0;
   align-content: center;
-  background-color: #EBECF0;
+  background-color: #Eaf0f5;
   position: absolute;
   left: 50%;
   transform: translateX(-50%); }
@@ -43,19 +43,19 @@ body {
     font-size: 36px;
     font-weight: 100;
     text-align: center;
-    color: #61677C;
+    color: #2f4874;
     text-shadow: 1px 1px 1px #FFF; }
   body article {
     box-sizing: border-box;
     margin: 36px;
     position: relative;
     top: 128px;
-    color: #323333;
+    color: #2f4874;
     text-align: left; }
     body article h1 {
       height: 64px;
       top: 50%;
-      border-radius: 16px;
+      border-radius: 32px;
       margin-top: 128px;
       margin-bottom: 36px;
       line-height: 64px;
@@ -64,23 +64,25 @@ body {
       font-size: 24px;
       font-weight: 100;
       font-family: 'GmarketSansLight';
-      color: #61677C;
+      color: #2f4874;
       text-shadow: 1px 1px 1px #FFF;
-      box-shadow: -3px -3px 50px #FFF, 3px 3px 50px #BABECC;
-      transition: all 0.1s ease-in-out;
+      box-shadow: -3px -3px 8px #FFF, 3px 3px 8px #ccd8eb;
+      transition: all 0.15s ease-in-out;
       cursor: pointer;
       font-weight: 600; }
       body article h1:hover {
-        box-shadow: -3px -3px 20px #FFF, 3px 3px 20px #BABECC; }
+        box-shadow: -1px -1px 1px #FFF, 1px 1px 1px #ccd8eb; }
       body article h1:active {
-        box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF; }
+        box-shadow: inset 1px 1px 2px #ccd8eb, inset -1px -1px 2px #FFF; }
       body article h1 p-p {
-        opacity: 0.5;
+        color: #ccd8eb;
+        text-shadow: 1px 1px 1px #FFF;
         position: absolute;
         align-content: right;
         font-family: 'NotoSansRegular';
+        font-weight: normal;
         right: 4px;
-        transform: translateX(-16px);
+        transform: translateX(-32px);
         font-size: 16px;
         text-align: right;
         height: 16px;
@@ -115,7 +117,7 @@ body {
       line-height: 2; }
     body article .quoter {
       font-family: 'NotoSansRegular';
-      color: #BABECC;
+      color: #ccd8eb;
       text-shadow: 1px 1px 1px #FFF;
       text-align: right;
       margin-right: 36px; }
@@ -127,7 +129,7 @@ body {
       border-radius: 16px;
       display: block;
       margin: 64px auto;
-      box-shadow: -2px -2px 8px #FFF, 2px 2px 8px #BABECC; }
+      box-shadow: -2px -2px 8px #FFF, 2px 2px 8px #ccd8eb; }
   body footer {
     margin: 64px; }
 
