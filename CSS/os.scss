@@ -68,7 +68,7 @@ body {
     overflow-y : scroll;
     width: 100%;
     max-width: 75*$r;
-    min-width: 30*$r;
+    min-width: 45*$r;
     padding: 0;
     border: 0;
     margin: 3*$r auto;
@@ -176,12 +176,14 @@ body {
             }
 
             p{
+                text-align: justify;
                 padding: 0 2*$r;
                 text-indent: 3*$r;
                 font-family: 'NotoSemiBold';
                 font-size: $r;
                 line-height: 2;
                 letter-spacing: 0.03*$r;
+                margin: $r 0;
                 b{
                     box-shadow: -2px -2px 32px $color-white,  2px 2px 32px $color-shadow;
                     font-family: 'NotoSansRegular'; 
