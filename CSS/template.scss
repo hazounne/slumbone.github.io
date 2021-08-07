@@ -42,13 +42,13 @@ body {
     
 
         header{
-            line-height: 8*$r;
+            line-height: 3.5*$r;
             box-sizing:border-box;
             position: relative;
             margin: 8*$r 0;
             font-family: 'GmarketSansLight';
             font-weight: bold;
-            font-size: 2.75*$r;
+            font-size: 2.5*$r;
             letter-spacing: 0.1*$r;
             word-spacing: 0.5*$r;
             text-align: center;
@@ -63,8 +63,7 @@ body {
                 text-shadow: 1px 1px 1px $color-white;
                 transition: all 0.5s ease-in-out;
                 &:hover {
-                    color: $color-dark;
-                    text-shadow: 1px 1px 1px $color-white;
+                    color: $color-demi;
                 }
             }
         }
@@ -178,6 +177,31 @@ body {
 
                 }
 
+                x-x{
+                    text-indent: 0px;
+                    text-shadow: 1px 1px 1px $color-white;
+                    color: $color-shadow; 
+                    transition: all 0.5s ease-in-out;
+                    &:hover {
+                        color: $color-demi;
+                        text-shadow:-2px -2px 2px $color-white,  2px 2px 2px $color-shadow;
+                    }    
+                }
+
+                b-b{
+                    text-indent: 0px;
+                    text-shadow: 1px 1px 1px $color-white;
+                    color: $color-shadow; 
+                    transition: all 0.5s ease-in;
+                    filter: blur(2px);
+                    &:hover {
+                        transition: all 2s ease-in;
+                        filter: blur(0);
+                        color: $color-demi;
+                        text-shadow:-2px -2px 2px $color-white,  2px 2px 2px $color-shadow;
+                    }    
+                }
+
             }
 
             .m{
@@ -186,7 +210,7 @@ body {
                 color: $color-demi;
                 font-family: 'Noto Sans KR', sans-serif;
                 font-weight: 400;
-            text-align: center;
+                text-align: center;
                 line-height: 2;
                 padding: 2*$r 4*$r;
                 margin: 2*$r 2*$r;

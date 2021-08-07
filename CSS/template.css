@@ -28,13 +28,13 @@ body {
   padding: 0 96px;
   background-color: #Eaf0f5; }
   body header {
-    line-height: 128px;
+    line-height: 56px;
     box-sizing: border-box;
     position: relative;
     margin: 128px 0;
     font-family: 'GmarketSansLight';
     font-weight: bold;
-    font-size: 44px;
+    font-size: 40px;
     letter-spacing: 1.6px;
     word-spacing: 8px;
     text-align: center;
@@ -48,8 +48,7 @@ body {
       text-shadow: 1px 1px 1px #FFF;
       transition: all 0.5s ease-in-out; }
       body header p:hover {
-        color: #2f4874;
-        text-shadow: 1px 1px 1px #FFF; }
+        color: #607ca9; }
   body article {
     box-sizing: border-box;
     position: relative;
@@ -137,6 +136,25 @@ body {
         body article p s-m:hover {
           color: #607ca9;
           text-shadow: -2px -2px 2px #FFF, 2px 2px 2px #ccd8eb; }
+      body article p x-x {
+        text-indent: 0px;
+        text-shadow: 1px 1px 1px #FFF;
+        color: #ccd8eb;
+        transition: all 0.5s ease-in-out; }
+        body article p x-x:hover {
+          color: #607ca9;
+          text-shadow: -2px -2px 2px #FFF, 2px 2px 2px #ccd8eb; }
+      body article p b-b {
+        text-indent: 0px;
+        text-shadow: 1px 1px 1px #FFF;
+        color: #ccd8eb;
+        transition: all 0.5s ease-in;
+        filter: blur(2px); }
+        body article p b-b:hover {
+          transition: all 2s ease-in;
+          filter: blur(0);
+          color: #607ca9;
+          text-shadow: -2px -2px 2px #FFF, 2px 2px 2px #ccd8eb; }
     body article .m {
       text-indent: 0;
       letter-spacing: 0.4px;
@@ -213,4 +231,4 @@ body {
       color: #607ca9;
       text-shadow: -2px -2px 2px #FFF, 2px 2px 2px #ccd8eb; }
 
-/*# sourceMappingURL=os.css.map */
+/*# sourceMappingURL=template.css.map */
