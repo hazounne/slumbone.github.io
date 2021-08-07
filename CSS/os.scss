@@ -1,37 +1,8 @@
-@font-face {
-    font-family: 'GmarketSansBold';
-    src: url('./fonts/GmarketSansTTFBold.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'GmarketSansMedium';
-    src: url('./fonts/GmarketSansTTFMedium.ttf') format('truetype');
-}
+
 @font-face {
     font-family: 'GmarketSansLight';
-    src: url('./fonts/GmarketSansTTFLight.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'NotoRegular';
-    src: url('./fonts/NotoSerifKR-Regular.otf') format('opentype');
-}
-@font-face {
-    font-family: 'NotoSemiBold';
-    src: url('./fonts/NotoSerifKR-SemiBold.otf') format('opentype');
-}
-@font-face {
-    font-family: 'NotoSansRegular';
-    src: url('./fonts/NotoSansKR-Regular.otf') format('opentype');
-    font-style: normal;
-}
-@font-face {
-    font-family: 'NotoSansLight';
-    src: url('./fonts/NotoSansKR-Light.otf') format('opentype');
-    font-style: normal;
-}
-@font-face {
-    font-family: 'NotoSemiBold';
-    src: url('./fonts/STIXTwoText-Medium.ttf') format('truetype');
-    unicode-range: U+0030-007A;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -50,12 +21,6 @@ $r: 16px;
     position: fixed;
     top: 2*$r;
     left: 2*$r;
-    line-height: 100px;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    color: $color-shadow;
-    filter: drop-shadow(-2px -2px px $color-white);
 }
 
 *{
@@ -79,14 +44,14 @@ body {
         header{
             box-sizing:border-box;
             position: relative;
-            margin: 12*$r 0;
+            margin: 10*$r 0;
             font-family: 'GmarketSansLight';
             font-weight: bold;
             font-size: 2.75*$r;
             letter-spacing: 0.1*$r;
             word-spacing: 0.5*$r;
             text-align: center;
-            color: $color-demi;
+            color: $color-dark;
             text-shadow: -2px -2px 2px $color-white,  2px 2px 2px $color-shadow;
 
             transition: all 0.5s ease-in-out;
@@ -94,7 +59,6 @@ body {
             &:hover {
                 color: $color-shadow;
                 text-shadow: 1px 1px 1px $color-white;
-
             }
         }
 
@@ -114,18 +78,17 @@ body {
                 text-indent: 2*$r;
                 transform: translateY(-50%);
 
-                letter-spacing: 0.03*$r;
+                font-weight: 500;
+                font-family: 'Noto Sans KR', sans-serif;                
+                letter-spacing: 0;
                 word-spacing: 0.2*$r;
+                font-size: 1.5*$r;
 
-                font-size: 1.5*$r; font-weight: 100;
-                font-family: 'NotoSansLight';
-                font-weight: normal;
-                color: $color-demi; text-shadow: 1px 1px 1px $color-white;
+                color: $color-demi;
                 box-shadow: -3px -3px 16px $color-white,  3px 3px 16px $color-shadow;
-                text-shadow:-2px -2px 3px $color-white,  2px 2px 3px $color-shadow;
+                text-shadow:-1px -1px 1px $color-white,  1px 1px 1px $color-shadow;
                 transition: all 0.5s ease-in-out;
                 cursor: pointer;
-                font-weight: 600;
                 
                 &:hover {
                     color: $color-demi;
@@ -137,13 +100,13 @@ body {
                   box-shadow: inset 1px 1px 2px $color-shadow, inset -1px -1px 2px $color-white;
                 }
 
-                p-p{
+                @at-root p-p{
+                    font-family: 'Noto Sans KR' sans-serif;
+                    font-weight: 400;
                     color: $color-shadow;
                     text-shadow: 1px 1px 1px $color-white;
                     position: absolute;
                     align-content: right;
-                    font-family: 'NotoSansRegular';
-                    font-weight:normal;
                     right: 4px;
                     transform: translateX(-2*$r);
                     font-size: $r;
@@ -154,24 +117,26 @@ body {
                     &:hover {
                         color: $color-demi;
                         }
-                }
+                    }
 
-                
             }
 
             h3{
-                font-family: 'NotoSansRegular';
+                font-family: 'Noto Sans KR' sans-serif;
+                letter-spacing: 0.025*$r;
+                font-weight: 500;
                 color: $color-demi;
                 font-size: 1.25*$r;
-                font-weight: 100;
                 margin-top: 1.5*$r;
                 margin-bottom: 1.5*$r;
                 padding-left: $r;
+
                 p-p{
                     opacity: 0.5;
                     position: absolute;
                     align-content: right;
-                    font-family: 'NotoSansRegular';
+                    font-family: 'Noto Sans KR' sans-serif;
+                    font-weight: 400;
                     right: 4px;
                     transform: translateY(6px);
                     font-size: 16px;
@@ -185,22 +150,26 @@ body {
                 text-align: justify;
                 padding: 0 2*$r;
                 text-indent: 3*$r;
-                font-family: 'NotoSemiBold';
+                font-family: 'Noto Serif KR', serif;
+                font-weight: 600;
                 font-size: $r;
                 line-height: 2;
                 letter-spacing: 0.03*$r;
                 margin: $r 0;
                 b{
-                    font-family: 'NotoSansRegular'; 
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 400;
                     text-shadow:-2px -2px 3px $color-white,  2px 2px 3px $color-shadow;
                 }
 
                 b-2{
-                    font-family: 'NotoSansRegular'; 
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 400;
                 }
 
                 s-m{
-                    font-family: 'NotoSansRegular';
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 400;
                     text-indent: 0px;
                     font-size: 0.75*$r;
                     text-shadow: 1px 1px 1px $color-white;
@@ -220,9 +189,11 @@ body {
 
             .m{
                 text-indent: 0;
+                letter-spacing: 0.025*$r;
                 color: $color-demi;
-                font-family: 'NotoSansRegular';
-                text-align: center;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-weight: 400;
+            text-align: center;
                 line-height: 2;
                 padding: 2*$r 4*$r;
                 margin: 2*$r 2*$r;
@@ -240,7 +211,8 @@ body {
             }
 
             .quoter{
-                font-family: 'NotoSansRegular';
+                font-family: 'Noto Sans KR', sans-serif;
+                font-weight: 400;
                 color: $color-shadow;
                 text-shadow: 1px 1px 1px $color-white;
                 text-align: right;
@@ -272,7 +244,8 @@ body {
 
             a{
                 text-indent: 0;
-                font-family: 'NotoSansRegular';
+                font-family: 'Noto Sans KR', sans-serif;
+                font-weight: 400;
                 color: $color-demi;
                 text-shadow: 1px 1px 1px $color-white;
                 border-radius: $r;

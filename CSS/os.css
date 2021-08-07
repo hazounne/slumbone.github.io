@@ -1,30 +1,7 @@
 @font-face {
-  font-family: 'GmarketSansBold';
-  src: url("./fonts/GmarketSansTTFBold.ttf") format("truetype"); }
-@font-face {
-  font-family: 'GmarketSansMedium';
-  src: url("./fonts/GmarketSansTTFMedium.ttf") format("truetype"); }
-@font-face {
   font-family: 'GmarketSansLight';
-  src: url("./fonts/GmarketSansTTFLight.ttf") format("truetype"); }
-@font-face {
-  font-family: 'NotoRegular';
-  src: url("./fonts/NotoSerifKR-Regular.otf") format("opentype"); }
-@font-face {
-  font-family: 'NotoSemiBold';
-  src: url("./fonts/NotoSerifKR-SemiBold.otf") format("opentype"); }
-@font-face {
-  font-family: 'NotoSansRegular';
-  src: url("./fonts/NotoSansKR-Regular.otf") format("opentype");
-  font-style: normal; }
-@font-face {
-  font-family: 'NotoSansLight';
-  src: url("./fonts/NotoSansKR-Light.otf") format("opentype");
-  font-style: normal; }
-@font-face {
-  font-family: 'NotoSemiBold';
-  src: url("./fonts/STIXTwoText-Medium.ttf") format("truetype");
-  unicode-range: U+0030-007A;
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff") format("woff");
+  font-weight: normal;
   font-style: normal; }
 #banner {
   z-index: 1;
@@ -33,13 +10,7 @@
   width: 32px;
   position: fixed;
   top: 32px;
-  left: 32px;
-  line-height: 100px;
-  text-align: center;
-  color: white;
-  font-weight: bold;
-  color: #ccd8eb;
-  filter: drop-shadow(-2px -2px px #FFF); }
+  left: 32px; }
 
 * {
   box-sizing: border-box;
@@ -59,14 +30,14 @@ body {
   body header {
     box-sizing: border-box;
     position: relative;
-    margin: 192px 0;
+    margin: 160px 0;
     font-family: 'GmarketSansLight';
     font-weight: bold;
     font-size: 44px;
     letter-spacing: 1.6px;
     word-spacing: 8px;
     text-align: center;
-    color: #607ca9;
+    color: #2f4874;
     text-shadow: -2px -2px 2px #FFF, 2px 2px 2px #ccd8eb;
     transition: all 0.5s ease-in-out; }
     body header:hover {
@@ -87,32 +58,29 @@ body {
       line-height: 64px;
       text-indent: 32px;
       transform: translateY(-50%);
-      letter-spacing: 0.48px;
+      font-weight: 500;
+      font-family: 'Noto Sans KR', sans-serif;
+      letter-spacing: 0;
       word-spacing: 3.2px;
       font-size: 24px;
-      font-weight: 100;
-      font-family: 'NotoSansLight';
-      font-weight: normal;
       color: #607ca9;
-      text-shadow: 1px 1px 1px #FFF;
       box-shadow: -3px -3px 16px #FFF, 3px 3px 16px #ccd8eb;
-      text-shadow: -2px -2px 3px #FFF, 2px 2px 3px #ccd8eb;
+      text-shadow: -1px -1px 1px #FFF, 1px 1px 1px #ccd8eb;
       transition: all 0.5s ease-in-out;
-      cursor: pointer;
-      font-weight: 600; }
+      cursor: pointer; }
       body article h1:hover {
         color: #607ca9;
         box-shadow: -1px -1px 1px #FFF, 1px 1px 1px #ccd8eb;
         text-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(0, 0, 0, 0); }
       body article h1:active {
         box-shadow: inset 1px 1px 2px #ccd8eb, inset -1px -1px 2px #FFF; }
-      body article h1 p-p {
+      p-p {
+        font-family: 'Noto Sans KR' sans-serif;
+        font-weight: 400;
         color: #ccd8eb;
         text-shadow: 1px 1px 1px #FFF;
         position: absolute;
         align-content: right;
-        font-family: 'NotoSansRegular';
-        font-weight: normal;
         right: 4px;
         transform: translateX(-32px);
         font-size: 16px;
@@ -120,13 +88,14 @@ body {
         height: 16px;
         margin-bottom: 32px;
         transition: all 0.5s ease-out; }
-        body article h1 p-p:hover {
+        p-p:hover {
           color: #607ca9; }
     body article h3 {
-      font-family: 'NotoSansRegular';
+      font-family: 'Noto Sans KR' sans-serif;
+      letter-spacing: 0.4px;
+      font-weight: 500;
       color: #607ca9;
       font-size: 20px;
-      font-weight: 100;
       margin-top: 24px;
       margin-bottom: 24px;
       padding-left: 16px; }
@@ -134,7 +103,8 @@ body {
         opacity: 0.5;
         position: absolute;
         align-content: right;
-        font-family: 'NotoSansRegular';
+        font-family: 'Noto Sans KR' sans-serif;
+        font-weight: 400;
         right: 4px;
         transform: translateY(6px);
         font-size: 16px;
@@ -145,18 +115,22 @@ body {
       text-align: justify;
       padding: 0 32px;
       text-indent: 48px;
-      font-family: 'NotoSemiBold';
+      font-family: 'Noto Serif KR', serif;
+      font-weight: 600;
       font-size: 16px;
       line-height: 2;
       letter-spacing: 0.48px;
       margin: 16px 0; }
       body article p b {
-        font-family: 'NotoSansRegular';
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 400;
         text-shadow: -2px -2px 3px #FFF, 2px 2px 3px #ccd8eb; }
       body article p b-2 {
-        font-family: 'NotoSansRegular'; }
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 400; }
       body article p s-m {
-        font-family: 'NotoSansRegular';
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 400;
         text-indent: 0px;
         font-size: 12px;
         text-shadow: 1px 1px 1px #FFF;
@@ -170,8 +144,10 @@ body {
           text-shadow: -2px -2px 2px #FFF, 2px 2px 2px #ccd8eb; }
     body article .m {
       text-indent: 0;
+      letter-spacing: 0.4px;
       color: #607ca9;
-      font-family: 'NotoSansRegular';
+      font-family: 'Noto Sans KR', sans-serif;
+      font-weight: 400;
       text-align: center;
       line-height: 2;
       padding: 32px 64px;
@@ -185,7 +161,8 @@ body {
         font-size: 16px;
         text-shadow: -2px -2px 2px #FFF, 2px 2px 2px #ccd8eb; }
     body article .quoter {
-      font-family: 'NotoSansRegular';
+      font-family: 'Noto Sans KR', sans-serif;
+      font-weight: 400;
       color: #ccd8eb;
       text-shadow: 1px 1px 1px #FFF;
       text-align: right;
@@ -209,7 +186,8 @@ body {
         box-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(0, 0, 0, 0); }
     body article a {
       text-indent: 0;
-      font-family: 'NotoSansRegular';
+      font-family: 'Noto Sans KR', sans-serif;
+      font-weight: 400;
       color: #607ca9;
       text-shadow: 1px 1px 1px #FFF;
       border-radius: 16px;
