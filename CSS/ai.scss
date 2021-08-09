@@ -1,0 +1,63 @@
+$r: 16px;
+$color-bg: #6b4db7;
+$color-shadow: #6d6be7;
+$color-demi: #ab89e2;
+$color-white: #FFF;
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#banner{
+    z-index: 1;
+    -webkit-transform: translateZ(0);
+    border: none;
+    width: 2*$r;
+    position: fixed;
+    top: 2*$r;
+    left: 2*$r;
+}
+body {
+    position:relative;
+    overflow-x : hidden;
+    overflow-y : scroll;
+    min-width: 45*$r;
+    background-color: $color-bg;
+    transform: translateX(-50%);
+    left: 50%;
+
+        header{
+            width: 100%;
+            height: 45*$r;
+            line-height: 3.5*$r;
+            position: absolute;
+            background-color: blue;
+            font-family: 'GmarketSansMedium';
+            font-weight: bold;
+            font-size: 4*$r;
+            letter-spacing: 0.1*$r;
+            word-spacing: 0.5*$r;
+            text-align: center;
+            line-height: 60*$r;  
+            color: $color-white;
+            background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/ai/maxresdefault.jpg");
+            background-size: cover;
+            p{
+                position: relative;
+                height: $r;
+                font-size: $r;
+                color: $color-white;
+                transition: all 0.5s ease-in-out;
+                &:hover {
+                    color: $color-demi;
+                }
+            }
+        }
+    }
