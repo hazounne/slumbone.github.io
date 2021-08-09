@@ -184,6 +184,18 @@ body {
       transition: all 0.5s ease-out; }
       body article .quoter:hover {
         color: #607ca9; }
+    body article .cap {
+      text-indent: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+      font-weight: 400;
+      color: #ccd8eb;
+      text-shadow: 1px 1px 1px #FFF;
+      text-align: center;
+      margin: 0 16px 16px 0;
+      transform: translateY(-48px);
+      transition: all 0.5s ease-out; }
+      body article .cap:hover {
+        color: #607ca9; }
     body article ol {
       margin-top: 48px;
       margin-bottom: 48px; }

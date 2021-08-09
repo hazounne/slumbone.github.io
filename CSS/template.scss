@@ -239,7 +239,23 @@ body {
                 &:hover {
                     color: $color-demi;
                     }
+                }
+
+            .cap{
+                text-indent: 0;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-weight: 400;
+                color: $color-shadow;
+                text-shadow: 1px 1px 1px $color-white;
+                text-align: center;
+                margin: 0 $r $r 0;
+                transform: translateY(-3*$r);
+                transition: all 0.5s ease-out;
+                &:hover {
+                    color: $color-demi;
+                    }
             }
+    
 
             ol{
                 margin-top: 3*$r;
